@@ -1,8 +1,7 @@
-#optimal
-
 #Apply dif - Big changse to apply dif prange + jit to parallelize and cause a significant speed up,
 #switching from dictionaries to numpy arrays
 #visualize_particle_movement similar to apply dif
+
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
@@ -55,5 +54,5 @@ def runcode(path, diffusion_time):
     visualize_particle_movement(particles, edges)
 
 start = timer()
-runcode("/content/jokic.png", diffusion_time=100)
+runcode("/path/to/image.jpg", diffusion_time=100)
 print('optimized time: ',timer()-start)
